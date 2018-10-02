@@ -1,0 +1,63 @@
+body {
+  background-color: #F2F2F2;
+}
+
+
+nav {
+  border-top: 4px solid #1D5C8F;
+  background-color: #2B7FC3;
+}
+
+
+
+.card {
+  box-shadow: 0 1px 6px rgba(57,73,76,0.35);
+}
+h5, p, span {
+  font-style: normal!important;
+}
+
+p, a {
+  font-size: 14px!important;
+}
+
+#parent {
+  position: relative;
+  
+}
+
+#loading {
+  position: absolute;
+  left:50%;
+  transform: translate(-50%, 10%);
+}
+
+i {
+  font-size: 20px;
+  color: #919aa1;
+}
+
+#delSearch {
+  color: #000;
+  font-size: 16px;
+}
+
+.outer {
+  
+  padding: 5px;
+  color: rgb(70, 68, 68);
+  background: rgb(207, 207, 207);;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.inner {
+    
+    padding: 5px;
+    color: rgb(70, 68, 68);
+    background: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}

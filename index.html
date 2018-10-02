@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Bootswatch -->
+    <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.css">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Jobs | GitHub</title>
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="index.html"><img src="img/logo@2x.png" alt="" height="30"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link font-weight-bold text-white" href="#">All Jobs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link font-weight-bold text-white" href="#">How it Works</a>
+              </li>
+              
+            </ul>
+            <form id="jobQueryForm" class="form-inline my-2 my-lg-0">
+              <input id="jobQueryInput" class="form-control mr-sm-2" type="search" placeholder="Find Jobs" aria-label="Search">
+              <button id="jobBtnSubmit" class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+
+       
+        
+      <!-- OUTPUT -->
+      
+      <div class="container" id="parent">
+        
+          <h2 id="jobFeed" class="text-center py-5 font-weight-bold"></h2>
+          <hr>
+          <!-- LOADER HERE -->
+          <div id="loading">
+            <img src="img/loading_transparent.gif" alt="" class="text-center d-block mx-auto">
+          </div>
+          
+          
+          <div class="row">
+            <div id="left" class="col-md-2 px-1 pt-3">
+                
+                <i class="fab fa-twitter" style="color: #2B7FC3"></i>
+                <small class="font-weight-bold pl-2">Follow GitHub Jobs on Twitter</small>
+
+                <br>
+                <br>
+
+                <i class="fab fa-facebook-f" style="color: #2B7FC3"></i>
+                <small class="font-weight-bold pl-2">See Latest GitHub News on Facebook</small>
+
+                <br>
+                <br>
+                
+                <i class="fab fa-instagram" style="color: #2B7FC3"></i>
+                <small class="font-weight-bold pl-2">Follow GitHub Jobs on Instagram</small>
+                
+
+                <br>
+                <br>
+                <hr>
+                
+                <p class="font-weight-bold">Recent Searches</p>
+                <div id="recent"></div>
+                  
+            </div>
+            <div  class="col-md-8 mx-auto" id="output"></div>
+
+            <div id="right" class="col-md-2">
+              <p class="font-weight-bold pt-3">Featured Companies</p>
+              <div id="featured"></div>
+              <p class="font-weight-bold pt-3">Saved Jobs</p>
+              <ul id="savedJobs"  class="list-group list-group-flush">
+
+              </ul>
+            </div>
+          </div>
+      </div>
+
+
+    <!-- FOOTER -->
+    <hr>
+    <footer>
+      <div class="container py-2">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="d-flex">
+              <p class="text-center">The GitHub Blog</p>
+              <p class="text-center px-4">Contact</p>
+              <p class="text-center">API</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img src="img/invertocat.png" alt="" class="d-block mx-auto" height="25">
+          </div>
+          <div class="col-md-4">
+            <p class="text-center">&copy; 2018 GitHub Inc. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+     <!-- AXIOS -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <!-- CUSTOM JS -->
+   <script src="main.js"></script>
+
+  </body>
+</html>
